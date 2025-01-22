@@ -7,7 +7,7 @@ Tool that allows for the unpacking and packing of sound files offered in C,Syste
 
 ### How are j0 (voice files), k0 (sound effects) and u0 (background music) files structured?
 While the code also documents how these formats are structured, here it is also the same information on a more accessible manner:
-All these formats are simply bog-standard OGG Vorbis files, with the *OggS* signature swapped by either *Tink* or *Song*. Besides that, they only have all the following **3611 bytes are XOR swapped** with a key that will differ between which signature they are using. 
+All these formats are simply bog-standard OGG Vorbis files, with the *OggS* signature swapped with either *Tink* or *Song*. Besides that, they only have the following **3611 bytes XOR swapped** with a key that will differ between which signature they are using. 
 
 Any byte that might come after the one located in offset 3615 is left intact.
 
